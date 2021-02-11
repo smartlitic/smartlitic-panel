@@ -8,6 +8,6 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.smartlitic.com
+        server: ftp.smartlitic.com/public_html
         username: smartlit
-        password: ${{ secrets.ftp_password }}
+        password: lB7uA9w@Y(3a3Y
