@@ -12,3 +12,4 @@ jobs:
         server-dir: test/
         username: smartlit
         password: lB7uA9w@Y(3a3Y
+        log-level: verbose
