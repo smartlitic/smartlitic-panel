@@ -9,5 +9,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ftp.smartlitic.com
+        server-dir: test/
         username: smartlit
         password: lB7uA9w@Y(3a3Y
