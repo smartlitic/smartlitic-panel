@@ -1,0 +1,16 @@
+on: push
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ftp.smartlitic.com
+        server-dir: test/
+        username: smartlit
+        password: lB7uA9w@Y(3a3Y
+        log-level: verbose
+        dry-run: true
