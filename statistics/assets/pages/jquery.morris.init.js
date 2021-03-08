@@ -88,7 +88,7 @@
 
       //creating area chart
       var $areaData = [
-          {y: '2009', a: 10, b: 20},
+          {y: '2009', a: 30, b: 20},
           {y: '2010', a: 75, b: 65},
           {y: '2011', a: 50, b: 40},
           {y: '2012', a: 75, b: 65},
@@ -97,7 +97,9 @@
           {y: '2015', a: 90, b: 60},
           {y: '2016', a: 90, b: 75}
       ];
-      this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b'], ['Series A', 'Series B'], ['#4d79f6', '#ccd8fc']);
+      var $areaLable = ['Sales', 'Amount','Sales2', 'Amount2','Sales3'];
+      this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a'], $areaLable, ['#4d79f6']);
+      //this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b'], ['Series A', 'Series B'], ['#4d79f6', '#ccd8fc']);
 
       //creating bar chart
       var $barData = [
