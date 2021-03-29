@@ -25,6 +25,17 @@
   
   <body>
 
+    <div id="sticky-main">
+      <div id="sticky-feedback" >
+        <div id="sticky-title">Your Feedback</div>
+        <div id="sticky-span"></div>
+      </div>
+    </div>
+    
+      <div class="clear"></div>
+
+     <input style="display:none;" name="feedback" value="0" id="feedback-input">
+
     <!-- Header Section Start -->
     <header id="home" class="hero-area">    
       <div class="overlay">
@@ -38,31 +49,47 @@
             <i class="lni-menu"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#home">Home</a>
+            <ul class="navbar-nav  mr-auto w-100 justify-content-end">
+              <li class="nav-item box-select">
+                <div class="box-close">x</div>
+                <div class="box-change">change</div>
+                <a class="nav-link page-scroll box-select0" href="#home">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">About</a>
+              <li class="nav-item box-select">
+                <div class="box-close">x</div>
+                <div class="box-change">change</div>
+                <a class="nav-link page-scroll box-select1" href="#services">About</a>
               </li>  
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#features">Services</a>
+              <li class="nav-item box-select">
+                <div class="box-close">x</div>
+                <div class="box-change">change</div>
+                <a class="nav-link page-scroll box-select2" href="#features">Services</a>
               </li>                            
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#showcase">Showcase</a>
+              <li class="nav-item box-select">
+                <div class="box-close">x</div>
+                <div class="box-change">change</div>
+                <a class="nav-link page-scroll box-select3" href="#showcase">Showcase</a>
               </li>       
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+              <li class="nav-item box-select">
+                <div class="box-close">x</div>
+                <div class="box-change">change</div>
+                <a class="nav-link page-scroll box-select4" href="#pricing">Pricing</a>
               </li>     
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#team">Team</a>
+              <li class="nav-item box-select">
+                <div class="box-close">x</div>
+                <div class="box-change">change</div>
+                <a class="nav-link page-scroll box-select5" href="#team">Team</a>
               </li> 
               
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
+              <li class="nav-item box-select">
+                <div class="box-close">x</div>
+                <div class="box-change">change</div>
+                <a class="nav-link page-scroll box-select6" href="#contact">Contact</a>
               </li> 
-              <li class="nav-item">
-                <a class="btn btn-singin" href="statistics/index.html">View Demo</a>
+              <li class="nav-item box-select" style="margin-left:30px;" > 
+                <div class="box-close">x</div>
+                <div class="box-change">change</div>
+                <a class="btn btn-singin box-select7" href="statistics/index.html">View Demo</a>
               </li>
             </ul>
           </div>
@@ -72,8 +99,8 @@
         <div class="row space-100">
           <div class="col-lg-6 col-md-12 col-xs-12">
             <div class="contents">
-              <h2 class="head-title">Wanna serve better? Get feedbak from your customers!</h2>
-              <p>Add smartlitic today to your website and let your customers be your guide in becoming a better prvodider.</p>
+              <h2 class="head-title">Wanna serve better? Get feedback from your customers!</h2>
+              <p>Add smartlitic today to your website and let your customers be your guide in becoming a better provider.</p>
               <div class="header-button">
                 <a href="https://rebrand.ly/slick-ud" rel="nofollow" target="_blank" class="btn btn-border-filled">Start Trial</a>
               </div>
@@ -81,7 +108,7 @@
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12 p-0">
             <div class="intro-img">
-              <img src="img/intro.png" alt="">
+              <img style="max-width:70%" src="img/background/1.svg" alt="">
             </div>            
           </div>
         </div> 
@@ -89,7 +116,15 @@
     </header>
     <!-- Header Section End --> 
 
+   
+    
 
+       
+   
+
+
+
+  
     <!-- Services Section Start -->
     <section id="services" class="section">
       <div class="container">
@@ -99,7 +134,8 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon">
-                <i class="lni-cog"></i>
+                <!-- <i class="lni-cog"></i> -->
+                <div class="service-img-icon" id="img-lni-feedback"></div>
               </div>
               <h4>Live Feedback</h4>
               <p>Let your customers to rate and give you feed about almost everything on your website and mobile applications.</p>
@@ -110,10 +146,11 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon">
-                <i class="lni-brush"></i>
+                <!-- <i class="lni-brush"></i> -->
+                <div class="service-img-icon" id="img-lni-aggregation"></div>
               </div>
               <h4>Aggregation</h4>
-              <p>Too much data is not always good unless you make them organized and understandable! Smartilic organizes and delivers data visually and effectively.</p>
+              <p>Too much data is not always good unless you make them organized and understandable! Smartlitic organizes and delivers data visually and effectively.</p>
             </div>
           </div>
           <!-- End Col -->
@@ -121,10 +158,11 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon">
-                <i class="lni-heart"></i>
+                <!-- <i class="lni-heart"></i> -->
+                <div class="service-img-icon" id="img-lni-recommendation"></div>
               </div>
               <h4>AI-powered recommendations</h4>
-              <p>Smartilic uses aritifical intellegience to review feedback of users and provide recommendation based on them to enhance your website/applicaiton.</p>
+              <p>Smartlitic uses aritifical intellegience to review feedback of users and provide recommendation based on them to enhance your website/applicaiton.</p>
             </div>
           </div>
           <!-- End Col -->
@@ -177,7 +215,7 @@
 
 
     <!-- Cool Fetatures Section Start -->
-    <section id="features" class="section">
+    <section id="features" class="section features-section">
       <div class="container">
         <!-- Start Row -->
         <div class="row">
@@ -237,7 +275,7 @@
                </div>
                <div class="feature-info float-left">
                  <h4>Easy Integration</h4>
-                 <p>Smartilic is compatibile with all new (and old) <br>user interface technologies, including React,<br> Vue, and Angular.</p>
+                 <p>Smartlitic is compatibile with all new (and old) <br>user interface technologies, including React,<br> Vue, and Angular.</p>
                </div>
             </div>
             <!-- End Fetatures -->
@@ -253,7 +291,7 @@
                </div>
                <div class="feature-info float-left">
                  <h4>Documentation</h4>
-                 <p>Smartilic is throughly documented so<br> your developers can easily integrate it <br>with your existing infrastructure. </p>
+                 <p>Smartlitic is throughly documented so<br> your developers can easily integrate it <br>with your existing infrastructure. </p>
                </div>
             </div>
             <!-- End Fetatures -->
@@ -727,16 +765,15 @@
             <div class="pricing-text section-header text-center">  
               <div>   
                 <h2 class="section-title">Pricing Plans</h2>
-                <div class="desc-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>  
-                  <p>eiusmod tempor incididunt ut labore et dolore.</p>
-                </div>
+                
               </div> 
             </div>
           </div>
 
         </div>
         <!-- End Row -->
+        
+
         <!-- Start Row -->
         <div class="row pricing-tables">
          <!--  Start Col -->
@@ -744,14 +781,16 @@
             <div class="pricing-table text-center">
               <div class="pricing-details">
                 <h3>Free</h3>
-                <h1><span>$</span>00</h1>
+                <h6>(Start discovering)</h6>
+                <h1><span>$</span>00.00 / mo</h1>
                 <ul>
-                  <li>Free Instalation</li>
-                  <li>500MB Storage</li>
-                  <li>Single User</li>
-                  <li>5 GB Bandwith</li>
-                  <li>Minimal Features</li>
-                  <li>No Dashboard</li>
+                  <li>Manual on-demand reports</li>
+                  <li>1 Active team member</li>
+                  <li>Up to 10 comments per day</li>
+                  <li>Up to 10 user rating per day</li>
+                  <li>Up to 3 recorded sessions per day</li>
+                  <li>1 Survey</li>
+                  <li>Storage data for 2 months</li>
                 </ul>
               </div>
               <div class="plan-button">
@@ -764,15 +803,22 @@
           <div class="col-lg-4 col-md-4 col-xs-12">
             <div class="pricing-table text-center">
               <div class="pricing-details">
-                <h3>standard</h3>
-                <h1><span>$</span>19.99</h1>
+                <h3>Start-Up</h3>
+                <h6>(Add AI and Integrations. analyse like a pro!)</h6>
+                <h1><span>$</span>299 / mo</h1>
                 <ul>
-                  <li>Free Instalation</li>
-                  <li>2 GB Storage</li>
-                  <li>Upto 2 users</li>
-                  <li>50 GB Bandwith</li>
-                  <li>All Features</li>
-                  <li>Sales Dashboard</li>                  
+                  <li>15 days free trial</li>
+                  <li>Auto reports</li>
+                  <li>Unlimited team members</li>
+                  <li>Up to 50 comments per day</li>
+                  <li>Up to 50 ratings per day</li>
+                  <li>Up to 500 recorded sessions</li>     
+                  <li>1 AI analysis per component</li>   
+                  <li>1 AI suggestion per component</li>   
+                  <li>2 Survey per month</li>   
+                  <li>Unlimited integrations</li>   
+                  <li>Storage data for 1 Year</li>   
+                  <li>Remove Branding</li>                
                 </ul>
               </div>
               <div class="plan-button">
@@ -786,14 +832,21 @@
             <div class="pricing-table text-center">
               <div class="pricing-details">
                 <h3>Business</h3>
-                <h1><span>$</span>29.99</h1>
+                <h6>(Seemless, Limitless)</h6>
+                <h1><span>$</span>999 / mo</h1>
                 <ul>
-                  <li>Free Instalation</li>
-                  <li>5 GB Storage</li>
-                  <li>Upto 4 users</li>
-                  <li>100 GB Bandwith</li>
-                  <li>All Features</li>
-                  <li>Sales Dashboard</li>
+                  <li>Auto Reports</li>
+                  <li>Unlimited Team members</li>
+                  <li>Unlimited Comments</li>
+                  <li>Unlimited Rating</li>
+                  <li>Unlimited Recorded sessions</li>
+                  <li>Unlimited AI Analysis</li>
+                  <li>Unlimited AI suggestions</li>
+                  <li>Unlimited Survey</li>
+                  <li>Unlimited Integrations</li>
+                  <li>Storage Data forever</li>
+                  <li>Remove Branding</li>
+                  <li>Training with a Smartlitic specialist</li>
                 </ul>
               </div>
               <div class="plan-button">
@@ -917,7 +970,10 @@
     <!-- Client Testimoninals Section End --> 
 
 
-    <!-- Team section Start -->
+
+
+
+    <!-- Recent Showcase Section Start -->
     <section id="team" class="section">
       <div class="container">
         <!-- Start Row -->
@@ -935,198 +991,230 @@
         </div>
         <!-- End Row -->
         <!-- Start Row -->
-        <div class="row">
-          <!-- Start Col -->
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <div class="single-team">
-              <div class="team-thumb">
-                <img src="img/team/01.jpg" class="img-fluid" alt="">
-              </div>
+        <div class="row justify-content-center faq-area">
+          <div class="col-lg-12 col-md-12 col-xs-12 pr-0">
+            <div class="faq-slider owl-carousel">
+              <div class="item">
+                
+                <div class="single-team">
+                  <div class="team-thumb">
+                    <img src="img/team/04.png" class="img-fluid" alt="">
+                  </div>
+    
+                  <div class="team-details">
+                    <div class="team-inner text-center">
+                      <h5 class="team-title">Sara Kazemi</h5>
+                      <p>PR and Sales</p>
+                    </div>
+                  </div>
+                </div>
 
-              <div class="team-details">
-              <div class="team-social-icons">
-                  <ul class="social-list">
-                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
-                  </ul>
-                </div> 
-                <div class="team-inner text-center">
-                  <h5 class="team-title">Hamid Tooba</h5>
-                  <p>Product Manager</p>
+              </div>
+              <div class="item">
+                <div class="single-team">
+                  <div class="team-thumb">
+                    <img src="img/team/02.png" class="img-fluid" alt="">
+                  </div>
+    
+                  <div class="team-details">
+                    <div class="team-inner text-center">
+                      <h5 class="team-title">Nader Rashed</h5>
+                      <p>CEO and Technical Team Lead</p>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="item">
+                <div class="single-team">
+                  <div class="team-thumb">
+                    <img src="img/team/01.png" class="img-fluid" alt="">
+                  </div>
+    
+                  <div class="team-details">              
+                    <div class="team-inner text-center">
+                      <h5 class="team-title">Hamid Tooba</h5>
+                      <p>CPO/Product Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-team">
+                  <div class="team-thumb">
+                    <img src="img/team/05.png" class="img-fluid" alt="">
+                  </div>
+    
+                  <div class="team-details">              
+                    <div class="team-inner text-center">
+                      <h5 class="team-title">Alireza Abdifar</h5>
+                      <p>Data scientist</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                  <div class="single-team">
+                    <div class="team-thumb">
+                      <img src="img/team/03.png" class="img-fluid" alt="">
+                    </div>
+      
+                    <div class="team-details">
+                      <div class="team-inner text-center">
+                        <h5 class="team-title">Saeid Hosseini</h5>
+                        <p>Finance and HR</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+           
+
+
+              
             </div>
           </div>
-          <!-- Start Col -->
- 
-          <!-- Start Col -->
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <div class="single-team">
-              <div class="team-thumb">
-                <img src="img/team/02.jpg" class="img-fluid" alt="">
-              </div>
-
-              <div class="team-details">
-              <div class="team-social-icons">
-                  <ul class="social-list">
-                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
-                  </ul>
-                </div>
-                <div class="team-inner text-center">
-                  <h5 class="team-title">Nader Rashed</h5>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Start Col -->
- 
-          <!-- Start Col -->
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <div class="single-team">
-              <div class="team-thumb">
-                <img src="img/team/03.jpg" class="img-fluid" alt="">
-              </div>
-
-              <div class="team-details">
-              <div class="team-social-icons">
-                  <ul class="social-list">
-                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
-                  </ul>
-                </div>
-                <div class="team-inner text-center">
-                  <h5 class="team-title">Saeid Hosseini</h5>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Start Col -->
- 
-          <!-- Start Col -->
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <div class="single-team">
-              <div class="team-thumb">
-                <img src="img/team/04.jpg" class="img-fluid" alt="">
-              </div>
-
-              <div class="team-details">
-                <div class="team-social-icons">
-                  <ul class="social-list">
-                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
-                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
-                  </ul>
-                </div>
-                <div class="team-inner text-center">
-                  <h5 class="team-title">Sara Kazemi</h5>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Start Col -->
- 
-
         </div>
         <!-- End Row -->
       </div>
     </section>
-    <!-- Team section End -->
+    <!-- Recent Showcase Section End --> 
 
 
-    <!-- Contact Us Section -->
-    <section id="contact" class="section">
-      <!-- Container Starts -->
-      <div class="container">
-        <!-- Start Row -->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="contact-text section-header text-center">  
-              <div>   
-                <h2 class="section-title">Contact Us</h2>
-                <div class="desc-text">
-                  <p>Wanna know more? Contact us here and our sale agents</p>  
-                  <p>will contact you in less than 24 hours.</p>
-                </div>
-              </div> 
-            </div>
-          </div>
 
-        </div>
-        <!-- End Row -->
-        <!-- Start Row -->
-        <div class="row">
-          <!-- Start Col -->
-          <div class="col-lg-6 col-md-12">
-          <form id="contactForm">
+
+
+
+
+
+
+
+
+
+        <!-- Cool Fetatures Section Start -->
+        <section id="contact" class="section features-section">
+          <div class="container">
+            <!-- Start Row -->
             <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                  <div class="help-block with-errors"></div>
-                </div>                                 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" name="msg_subject" required data-error="Please enter your subject">
-                  <div class="help-block with-errors"></div>
-                </div> 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
-                  <div class="help-block with-errors"></div>
-                </div>                                 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Budget" id="budget" class="form-control" name="budget" required data-error="Please enter your Budget">
-                  <div class="help-block with-errors"></div>
-                </div> 
-              </div>
-              <div class="col-md-12">
-                <div class="form-group"> 
-                  <textarea class="form-control" id="message"  name="message" placeholder="Write Message" rows="4" data-error="Write your message" required></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="submit-button">
-                  <button class="btn btn-common" id="submit" type="submit">Submit</button>
-                  <div id="msgSubmit" class="h3 hidden"></div> 
-                  <div class="clearfix"></div> 
+              <div class="col-lg-12">
+                <div class="features-text section-header text-center">  
+                  <div>   
+                    <h2 class="section-title">FAQ</h2>
+                    
+                  </div> 
                 </div>
               </div>
-            </div>            
-          </form>
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-1">
-            
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-4 col-md-12">
-            <div class="contact-img">
-              <img src="img/contact/01.png" class="img-fluid" alt="">
+    
             </div>
+            <!-- End Row -->
+            <!-- Start Row -->
+            <div class="row featured-bg">
+             <!-- Start Col -->
+              <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+                 <!-- Start Fetatures -->
+                <div class="feature-item featured-border1">
+                   <div class="feature-icon float-left">
+                     <div class="div-numeric">1</div>
+                   </div>
+                   <div class="feature-info float-left">
+                     <h4>Will Smartlitic work with my site?</h4>
+                     <p>Smartlitic works out of the box with many popular<br> CMS, e-commerce platforms, tag managers, CRM <br>systems, and data-handling tools.</p>
+                   </div>
+                </div>
+                <!-- End Fetatures -->
+              </div>
+               <!-- End Col -->
+              
+             <!-- Start Col -->
+              <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+                 <!-- Start Fetatures -->
+                <div class="feature-item featured-border2">
+                   <div class="feature-icon float-left">
+                    <div class="div-numeric">2</div>
+                   </div>
+                   <div class="feature-info float-left">
+                     <h4>Is Smartlitic really free to use<br> forever?</h4>
+                     <p>Yes. You can get started with our free plan which <br>lets you collect data from up to 2,000 pageviews <br>per day. If you need to scale the amount of data<br> you collect, you can always opt for a paid plan.</p>
+                   </div>
+                </div>
+                <!-- End Fetatures -->
+              </div>
+               <!-- End Col -->
+              
+             <!-- Start Col -->
+              <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+                 <!-- Start Fetatures -->
+                <div class="feature-item featured-border1">
+                   <div class="feature-icon float-left">
+                    <div class="div-numeric">3</div>
+                   </div>
+                   <div class="feature-info float-left">
+                     <h4>How many users can I add to <br>my Smartlitic account?</h4>
+                     <p>You can add an unlimited amount of users to your <br>Smartlitic account for free in every plan. Insights <br>are for sharing! Show your user behavior to <br>your colleagues and we guarantee they’ll<br> want their own account.</p>
+                   </div>
+                </div>
+                <!-- End Fetatures -->
+              </div>
+               <!-- End Col -->
+              
+             <!-- Start Col -->
+              <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+                 <!-- Start Fetatures -->
+                <div class="feature-item featured-border2">
+                   <div class="feature-icon float-left">
+                    <div class="div-numeric">4</div>
+                   </div>
+                   <div class="feature-info float-left">
+                    <h4>Will Smartlitic slow down my site?</h4>
+                    <p>At Smartlitic we take site performance very <br>seriously and do everything in our power to <br>optimize everything in the process. Smartlitic's<br> script, like most scripts and other tracking <br>solutions, will only have a marginal, almost <br>negligible, effect on your site's speed and <br>performance. Smartlitic does not affect your SEO.</p>
+                    
+                         </div>
+                </div>
+                <!-- End Fetatures -->
+              </div>
+               <!-- End Col -->
+              
+             <!-- Start Col -->
+              <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+                 <!-- Start Fetatures -->
+                <div class="feature-item featured-border3">
+                   <div class="feature-icon float-left">
+                    <div class="div-numeric">5</div>
+                   </div>
+                   <div class="feature-info float-left">
+                    <h4>What are Smartlitic reports?</h4>
+                    <p>Automatically collecting data from all pages on <br>your site can be very expensive and data intensive. <br>Smartlitic makes it more affordable by taking <br>an ‘on demand’ report approach.</p>
+                   </div>
+                </div>
+                <!-- End Fetatures -->
+              </div>
+               <!-- End Col -->
+              
+             <!-- Start Col -->
+              <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+                 <!-- Start Fetatures -->
+                <div class="feature-item">
+                   <div class="feature-icon float-left">
+                    <div class="div-numeric">6</div>
+                   </div>
+                   <div class="feature-info float-left">
+                   <h4>How do I install Smartlitic?</h4>
+                    <p>A single tracking code allows you to collect data<br> from your visitors and send it back to Smartlitic. <br>Installation involves copy and pasting your <br>unique Tracking Code within the site you would <br>like to track.</p>
+              
+                   </div>
+                </div>
+                <!-- End Fetatures -->
+              </div>
+               <!-- End Col -->
+              
+    
+            </div>
+            <!-- End Row -->
           </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-1">
-          </div>
-          <!-- End Col -->
+        </section>
+        <!-- Cool Fetatures Section End --> 
 
-        </div>
-        <!-- End Row -->
-      </div>
-    </section>
-    <!-- Contact Us Section End -->
+
+
 
     <!-- Footer Section Start -->
     <footer>
@@ -1137,10 +1225,20 @@
           <div class="row">
 
           <!-- Start Col -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               
               <div class="footer-logo">
-               <img src="img/footer-logo.png" alt="">
+               <img src="img/footer-logo1.png" alt="">
+              </div>
+            </div>
+             <!-- End Col -->
+             <!-- Start Col -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Product</h3>
+                <ul class="menu">
+                  <li style='color:#fff'>Smartlitic is an AI-Based leading solution for businesses selling online and their marketing, analytics, UX, and CRO teams who want a clearer understanding of user behavior. We help you better understand user behavior so you can make the right changes, improve UX, and grow conversions.</li>
+                </ul>
               </div>
             </div>
              <!-- End Col -->
@@ -1149,29 +1247,14 @@
               <div class="widget">
                 <h3 class="block-title">Company</h3>
                 <ul class="menu">
-                  <li><a href="#">  - About Us</a></li>
-                  <li><a href="#">- Career</a></li>
-                  <li><a href="#">- Press</a></li>
+                  <li><a href="#">- About Us</a></li>
+                  <li><a href="https://www.linkedin.com/company/smartlitic/">- Linkedin</a></li>
                 </ul>
               </div>
             </div>
              <!-- End Col -->
               <!-- Start Col -->
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">Product</h3>
-                <ul class="menu">
-                  <li><a href="#">  - Customer Service</a></li>
-                  <li><a href="#">- Enterprise</a></li>
-                  <li><a href="#">- Price</a></li>
-                  <li><a href="#">- Scurity</a></li>
-                  <li><a href="#">- Why Smartlitic?</a></li>
-                </ul>
-              </div>
-            </div>
-             <!-- End Col -->
-              <!-- Start Col -->
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <!-- <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="widget">
                 <h3 class="block-title">Download App</h3>
                 <ul class="menu">
@@ -1182,17 +1265,15 @@
                   <li><a href="#">- IOS Store</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
              <!-- End Col -->
               <!-- Start Col -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="widget">
-                <h3 class="block-title">Subscribe Now</h3>
-                <p>Wanna serve better? Get feedbak from your customers!</p>
-                <div class="subscribe-area">
-                  <input type="email" class="form-control" placeholder="Enter Email">
-                  <span><i class="lni-chevron-right"></i></span>
-                </div>
+                <h3 class="block-title">Contact us</h3>
+                <p>Contact us here and our sale agents
+                  will contact you in less than 24 hours.</p>
+                <p>smartlitic@gmail.com</p>
               </div>
             </div>
             <!-- End Col -->
@@ -1235,6 +1316,43 @@
     </div>
     <!-- End Preloader -->
 
+
+    <div id="sticky-box">
+      <div id="stk-close">X close</div>
+      <div id="stk-body"> 
+        <div id="stk-selector">How would you rate your experience?</div>
+        <div id="stk-selector-body">
+          <div class="stk-emoji" id="stk-love"></div>
+          <div class="stk-emoji" id="stk-like"></div>
+          <div class="stk-emoji" id="stk-neutral"></div>
+          <div class="stk-emoji" id="stk-dislike"></div>
+          <div class="stk-emoji" id="stk-hate"></div>
+        </div>
+        <div id="stk-selector-div">
+          <textarea id="stk-textarea" placeholder="Help us get better with your comments..."></textarea>
+         <!--  <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8"> -->
+              <div id="stk-select">Select a Component</div>
+            <!-- </div>
+            <div class="col-2"></div> 
+          </div> -->
+            <button id="stk-btn" class="btn btn-common"  type="submit" >Submit</button>
+          
+        </div>
+      </div>
+      <div id="stk-body-1"> 
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div id="stk-selector">Message send successfully.</div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>     
+    </div>
+
+    <div id="main-selector" ></div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery-min.js"></script>
     <script src="js/popper.min.js"></script>

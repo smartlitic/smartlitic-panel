@@ -3,10 +3,101 @@
  * Author: Mannatthemes
  * Analytics Dashboard Js
  */
+  var k = -1;
+  var optionArray = [ '15k', '10k', '8k', '6k', '4k', '2k' ];
+ var options = {
+  chart: {
+      height: 320,
+      type: 'area',
+      stacked: true,
+      toolbar: {
+        show: false,
+        autoSelected: 'zoom'
+      },
+  },
+  colors: ['#2a77f4', '#a5c2f1'],
+  dataLabels: {
+      enabled: false
+  },
+  stroke: {
+      curve: 'smooth',
+      width: [1.5, 1.5],
+      dashArray: [0, 3],
+      lineCap: 'round',
+  },
+  grid: {
+    padding: {
+      left: 0,
+      right: 0
+    },
+    strokeDashArray: 3,
+  },
+  markers: {
+    size: 0,
+    hover: {
+      size: 0
+    }
+  },
+  series: [{
+      name: 'Unique Clicks',
+      data: [0,5000,2000,9800,2500,9000,5500,2500,4400,3000,7500,9000]
+  }, {
+      name: 'Total Clicks',
+      data: [0,5500,3000,6500,5500,6400,4000,1150,5000,1050,9500,7000]
+  }],
+
+  xaxis: {
+      type: 'month',
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      axisBorder: {
+        show: true,
+      },  
+      axisTicks: {
+        show: true,
+      },                  
+  },
+  
+  
+  yaxis: {
+    axisBorder: {
+      show: true
+    },
+    axisTicks: {
+      show: true,
+    },
+    labels: {
+      show: true,
+      formatter: function (val) {
+        ++k;
+        return optionArray[k];
+      }
+    }
+  
+  },
 
 
+  fill: {
+    type: "gradient",
+    gradient: {
+      shadeIntensity: 1,
+      opacityFrom: 0.4,
+      opacityTo: 0.3,
+      stops: [0, 90, 100]
+    }
+  },
+  
+  tooltip: {
+      x: {
+          format: 'dd/MM/yy HH:mm'
+      },
+  },
+  legend: {
+    position: 'top',
+    horizontalAlign: 'right'
+  },
+}
 
-var options = {
+var options2 = {
   chart: {
       height: 320,
       type: 'area',
@@ -83,7 +174,14 @@ var chart = new ApexCharts(
   options
 );
 
+var chart2 = new ApexCharts(
+  document.querySelector("#ana_dash_2"),
+  options2
+);
+
 chart.render();
+
+chart2.render();
 
 // Spark
 
@@ -165,7 +263,7 @@ var options = {
     colors: ['transparent']
   },
  
-  series: [50, 25, 25,],
+  series: [22, 13, 65,],
   legend: {
     show: true,
     position: 'bottom',
