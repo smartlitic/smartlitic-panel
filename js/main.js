@@ -40,7 +40,7 @@
         margin:10,
         stopOnHover: true,
         autoPlay: true,
-        items: 5,
+        items: 3,
         itemsDesktopSmall: [1024, 3],
         itemsTablet: [600, 1],
         itemsMobile: [479, 1]

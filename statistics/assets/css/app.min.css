@@ -187,6 +187,28 @@
     width : 18px;
     margin-right: 3px;
 }
+.subAccordion-border0{
+    padding-right: 0  !important;
+    margin-right: 0  !important;
+
+}
+.subAccordion-border{
+    border-right: 1px solid #B4B4B4;
+    padding-right: 0  !important;
+    margin-right: 0  !important;
+}
+.subAccordion-borderi{
+    padding-right: 0  !important;
+    margin-right: 0  !important;
+    padding-left: 0  !important;
+    margin-left: 0  !important;
+}
+.subAccordion-border2{
+    border-top: 1px solid #B4B4B4;
+    margin-left: 0  !important;
+    margin-right: 0  !important;
+    padding: 15px 0 10px 20px;
+}
 
 #subAccordion-1 .text-dark[aria-expanded="true"] {
     background: url(../images/overal/up1.svg) no-repeat #F4F7FF;
@@ -217,6 +239,10 @@
 
 .subAccordion-content3{
     color: #228755;
+    margin: 0 25px 15px;
+    border-bottom: 1px solid #B4B4B4;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .subAccordion-content3.font-red{
@@ -270,26 +296,32 @@
 .pricing-table {
     border: 1px solid #B4B4B4;
     text-align: center;
+    padding: 5px 18px 18px;
+    margin-bottom: 15px;
 }
  .pricing-table h3 {
-    font-size: 20px;
+    font-size: 12px;
     color: #151948;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 5px; }
+    margin-bottom: 0;
+     }
  .pricing-table h1 {
     color: #3ecf8e;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 500;
     position: relative;
-    padding-left: 10px; }
+    padding-left: 14px;
+    line-height: 20px;
+    margin-top: 0; }
+.pricing-table.subAccordin-green h1 {
+    color: #228755; }   
  .pricing-table h1 span {
-    font-size: 16px;
+    font-size: 13px;
     position: absolute;
     left: 20%;
     top: -2px; }
  .pricing-table ul {
-    padding-bottom: 18px;
     padding-left: 0; }
  .pricing-table ul li {
     font-size: 10pt;
@@ -303,12 +335,14 @@
         border-style: solid;
         border-width: 1px;
         cursor: pointer;
-        background-color: transparent;
-        border-color: #3ecf8e;
-        color: #3ecf8e;
-        width: 160px;
-        height: 50px;
-        padding: 14px 15px; }
+        color: #fff;
+        font-size: 15px;
+        width: 120px;
+        height: 40px;
+        padding: 7px 0 0 ;
+        background-color: #3ecf8e; }
+    .pricing-table.subAccordin-green .btn-border {
+        background-color: #228755; }    
       
     .pricing-table  .btn-border:hover {
         box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
