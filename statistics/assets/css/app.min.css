@@ -24,6 +24,7 @@
     justify-content: center;
     display: flex;
     border:0;
+    cursor: default !important;
 }
 
 .chat-note-ma  .align-self-center .btn1, .component-head-left  .cmp-title .btn1{
@@ -138,12 +139,18 @@
 }
 
 .component-head-tab {
-    background: url(../images/overal/up.svg) no-repeat  right center;
+    background: url(../images/overal/down.svg) no-repeat  right center;
     background-size: 30px;
     color: #7781BD;
     padding-right: 30px;
-    font-size: 13pt;;
+    font-size: 13pt;
 }
+
+ .text-dark[aria-expanded=true] .component-head-tab {
+    background: url(../images/overal/up.svg) no-repeat  right center !important;
+    background-size: 30px  !important;
+    font-size: 13pt;
+} 
 
 .component-head-left .cmp-title button {
     font-size: 10px;

@@ -74,6 +74,7 @@
     line-height: 31px; }
   #footer-Content {
     padding-top: 80px; }
+
   #footer-Content .copyright {
     margin-top: 80px; }
   .hero-area .contents h2 {
@@ -119,7 +120,7 @@
     display: block;
     margin: 0px auto; }
   #footer-Content .footer-logo img {
-    padding-top: 0; }
+    padding-top: 10px; }
   #footer-Content .copyright p {
     color: #3ecf8e;
     font-size: 14px; }
@@ -286,19 +287,19 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px; }
+    .footer-contact{
+      padding-bottom: 10px;}
   #footer-Content h3.block-title {
-    color: #fff;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
     margin-top: 15px; }
   #footer-Content .footer-logo img {
-    padding-top: 0; }
+    padding-top: 10px; }
   #footer-Content {
-    padding-top: 30px;
-    background: #180e29; }
+    padding-top: 30px; }
   #footer-Content .footer-logo img {
-    padding-top: 0;
+    padding-top: 10px;
     width: 40%; }
   #blog .blog-item-wrapper .author {
     border-top: 1px solid #ddd;
@@ -416,7 +417,7 @@
   #blog .blog-item-wrapper a.read-more {
     font-size: 12px; }
   #footer-Content {
-    padding-top: 100px; }
+    /* padding-top: 100px;  */}
   #footer-Content .copyright {
     margin-top: 100px; }
   .hero-area .contents p {

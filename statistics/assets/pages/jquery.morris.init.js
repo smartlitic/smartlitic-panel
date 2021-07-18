@@ -37,10 +37,15 @@
           xkey: xkey,
           ykeys: ykeys,
           labels: labels,
-          resize: true,
-          hideHover: 'auto',
+         resize: true,
+          hideHover: false,
+          behaveLikeLine: true,
+          ymin: 1,
+         // ykeys: ['nb'],
           gridLineColor: 'rgba(137, 151, 189, 0.15)',
           gridTextColor:'#8997bd',
+          pointFillColors: ['#ffffff'],
+          pointStrokeColors: ['#8997bd'],
           lineColors: lineColors
       });
   },
@@ -88,16 +93,16 @@
 
       //creating area chart
       var $areaData = [
-          {y: '2009', a: 30, b: 20},
-          {y: '2010', a: 75, b: 65},
-          {y: '2011', a: 50, b: 40},
-          {y: '2012', a: 75, b: 65},
-          {y: '2013', a: 50, b: 40},
-          {y: '2014', a: 75, b: 65},
-          {y: '2015', a: 90, b: 60},
-          {y: '2016', a: 90, b: 75}
+          {y: '2014', a: 1},
+          {y: '2015', a: 2},
+          {y: '2016', a: 4},
+          {y: '2017', a: 2},
+          {y: '2018', a: 3},
+          {y: '2019', a: 5},
+          {y: '2020', a: 2},
+          {y: '2021', a: 4}
       ];
-      var $areaLable = ['Sales', 'Amount','Sales2', 'Amount2','Sales3'];
+      var $areaLable = [0, 1, 2,3, 4,5];
       this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a'], $areaLable, ['#4d79f6']);
       //this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b'], ['Series A', 'Series B'], ['#4d79f6', '#ccd8fc']);
 
